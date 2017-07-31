@@ -6,7 +6,8 @@ class Welcome extends Component {
     console.log(this.props.combinedReducer);
 		return (
 			<div className="center-align">
-				<h3>Welcome to the react-redux starter pack!</h3>
+				<h3>Isaac Sek</h3>
+				<img src={process.env.PUBLIC_URL + "/images/pic.jpg"} style = {{maxWidth:'100%', height:'500px'}}></img>
 			</div>
 		);
 	}
