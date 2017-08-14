@@ -7,7 +7,7 @@ class Welcome extends Component {
 		return (
 			<div className="center-align">
 				<h3>Isaac Sek</h3>
-				<img src={process.env.PUBLIC_URL + "/images/pic.jpg"} style = {{maxWidth:'100%', height:'500px'}}></img>
+				<img src={process.env.PUBLIC_URL + "/images/pic.jpg"} style = {{maxWidth:'100%', height:'500px'}}  alt="alternative"></img>
 			</div>
 		);
 	}

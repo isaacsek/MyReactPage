@@ -10,6 +10,7 @@ import reduxThunk from "redux-thunk";
 import App from "./components/App";
 import reducers from "./reducers"; // folder find the index file
 
+// Index deals with all connections to reduxers/redux and houses app
 const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 
 ReactDOM.render(
