@@ -8,6 +8,7 @@ import Welcome from "./Welcome";
 import About from "./About";
 import Contact from "./Contact";
 import Projects from "./Projects";
+import BurgerMenu from "./BurgerMenu"
 
 class App extends Component {
 	componentDidMount() {
@@ -19,11 +20,18 @@ class App extends Component {
 			<div>
 				<BrowserRouter>
 					<div>
-						<Header />
-						<Route exact={true} path="/" component={Welcome} />
-						<Route exact={true} path="/projects" component={Projects} />
-						<Route exact={true} path="/about" component={About} />
-						<Route exact={true} path="/contact" component={Contact} />
+						{/* <Header /> */}
+						<div id="outer-container">
+							<BurgerMenu />
+						  	<main id="page-wrap">
+							  	<Route exact={true} path="/" component={Welcome} />
+		  						<Route exact={true} path="/projects" component={Projects} />
+		  						<Route exact={true} path="/about" component={About} />
+		  						<Route exact={true} path="/contact" component={Contact} />
+						  	</main>
+						</div>
+
+
 					</div>
 				</BrowserRouter>
 			</div>
