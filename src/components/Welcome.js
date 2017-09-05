@@ -1,22 +1,28 @@
 import React, { Component } from "react";
-import {connect} from 'react-redux';
+import { connect } from "react-redux";
 
 class Welcome extends Component {
 	render() {
-    console.log(this.props.combinedReducer);
+		//console.log(this.props.combinedReducer);
 		return (
-			<div className="center-align">
-				<h3>Isaac Sek</h3>
-				<img src={process.env.PUBLIC_URL + "/images/pic.jpg"} style = {{maxWidth:'100%', height:'500px'}}  alt="alternative"></img>
+			<div style={{height:'100vh', textAlign:'center'}}>
+				<div className="verticalContent" style={{display:"inline-block", textAlign:'left'}}>
+					<h1>Isaac Sek</h1>
+					<div className="ml-2">
+						<h5>(360)213-8953</h5>
+						<h5>Isaacsek@uw.edu</h5>
+						<h5>Seattle, WA</h5>
+					</div>
+				</div>
 			</div>
 		);
 	}
 }
 
 function mapStateToProps(state) {
-  return {
-    combinedReducer: state.sample
-  };
+	return {
+		combinedReducer: state.sample
+	};
 }
 
 export default connect(mapStateToProps)(Welcome);

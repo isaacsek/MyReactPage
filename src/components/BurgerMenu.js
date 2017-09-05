@@ -10,12 +10,24 @@ class BurgerMenu extends Component {
 
 	render() {
 		return (
-            <Menu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } >
-                <Link to="/">Home</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/about">About</Link>
-                <Link to="/contact">Contact</Link>
-                <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
+            <Menu pageWrapId={ "menu-page-wrap" } outerContainerId={ "menu-outer-container" } noOverlay isOpen={ true }>
+                <div className="center-align">
+                    <img src={process.env.PUBLIC_URL + "/images/pic2.jpg"} style = {{maxWidth:'65%', height:'auto', borderRadius:'50%'}}  alt="alternative"></img>
+                </div>
+
+                <div className="center-align">
+                    <i className="fa fa-linkedin" aria-hidden="true" title="LinkedIn" style={{color:"black", fontSize:'4rem', display:'inline-block'}}></i>
+                    <i className="fa fa-github ml-2" aria-hidden="true" title="LinkedIn" style={{color:"black", fontSize:'4rem', display:'inline-block'}}></i>
+                    <i className="fa fa-stack-overflow ml-2" aria-hidden="true" title="LinkedIn" style={{color:"black", fontSize:'4rem', display:'inline-block'}}></i>
+                    <i className="fa fa-quora ml-2" aria-hidden="true" title="LinkedIn" style={{color:"black", fontSize:'4rem', display:'inline-block'}}></i>
+                </div>
+
+                <div className="ml-2">
+                    <div><Link to="/">Home</Link></div>
+                    <div><Link to="/projects">Projects</Link></div>
+                    <div><Link to="/about">About</Link></div>
+                    <div><Link to="/contact">Contact</Link></div>
+                </div>
             </Menu>
 		);
 	}
