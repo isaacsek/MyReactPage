@@ -6,16 +6,20 @@ class Contact extends Component {
 	render() {
 		return (
 			<div style={{height:'100vh', textAlign:'center'}}>
-				<div className="verticalContent" style={{display:"inline-block", textAlign:'left'}}>
-					<h1>Contact</h1>
-					<div className="ml-2" style={{marginLeft:'30px'}}>
+				<div className="verticalContent" style={{display:"inline-block", textAlign:'left', color:'white'}}>
+					<h1>Isaac Sek</h1>
+					<div className="" style={{}}>
 						<div className="">
-                            <i className="material-icons" style={{fontSize:'32px', display:'inline', position:'relative', top:'5px', color:'black'}}>call</i>
+                            <i className="material-icons" style={{fontSize:'32px', display:'inline', position:'relative', top:'5px', color:'white'}}>call</i>
                             <p className="ml-2" style={{fontSize:'32px', display:'inline'}}>(360)213-8953</p>
                         </div>
 						<div className="">
-                            <i className="material-icons" style={{fontSize:'32px', display:'inline', position:'relative', top:'5px', color:'black'}}>email</i>
+                            <i className="material-icons" style={{fontSize:'32px', display:'inline', position:'relative', top:'5px', color:'white'}}>email</i>
                             <p className="ml-2" style={{fontSize:'32px', display:'inline'}}>Isaacsek@uw.edu</p>
+                        </div>
+						<div className="">
+                            <i className="material-icons" style={{fontSize:'32px', display:'inline', position:'relative', top:'5px', color:'white'}}>add_location</i>
+                            <p className="ml-2" style={{fontSize:'32px', display:'inline'}}>Seattle, WA</p>
                         </div>
 					</div>
 				</div>

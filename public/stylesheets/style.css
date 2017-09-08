@@ -15,64 +15,6 @@
 }
 
 
-/* Position and sizing of burger button */
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
-}
-
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-  background: #373a47;
-}
-
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-  height: 24px;
-  width: 24px;
-}
-
-/* Color/shape of close button cross */
-.bm-cross {
-  background: #bdc3c7;
-}
-
-/* General sidebar styles */
-.bm-menu {
-    width:100%;
-  background: #373a47;
-  /*padding: 2.5em 1.5em 0;*/
-  font-size: 1.15em;
-}
-
-.bm-menu-wrap {
-width:100%;
-  bottom: 0;
-  left: 0;
-}
-
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-  fill: #373a47;
-}
-
-/* Wrapper for item list */
-.bm-item-list {
-    width:100%;
-    color: #b8b7ad;
-    padding: 0.8em;
-}
-
-/* Styling of overlay */
-.bm-overlay {
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.3);
-}
-
 .verticalContainer {
   /*color: white;
   background: #ffbd17;*/
@@ -104,12 +46,16 @@ width:100%;
   transition-property: color, background-color;
 }
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-  background-color: #EF9A9A;
+  background-color: #9E9E9E;
   color: white;
 }
 
+.hvr-fade:focus {
+    background-color: red;
+}
+
 .fa-linkedin {
-    color:black;
+    color: #bdc3c7;
     font-size: 4rem;
     display:inline-block;
 }
@@ -120,7 +66,7 @@ width:100%;
 
 
 .fa-github {
-    color:black;
+    color:#bdc3c7;
     font-size: 4rem;
     display:inline-block;
 }
@@ -130,7 +76,7 @@ width:100%;
 }
 
 .fa-stack-overflow {
-    color:black;
+    color:#bdc3c7;
     font-size: 4rem;
     display:inline-block;
 }
@@ -140,11 +86,20 @@ width:100%;
 }
 
 .fa-quora {
-    color:black;
+    color:#bdc3c7;
     font-size: 4rem;
     display:inline-block;
 }
 
 .fa-quora:hover{
     color:#FFCA28;
+}
+
+body {
+    background-image: url("../images/stars3.jpg");
+    /*background-color: #BDBDBD;*/
+}
+
+a {
+    text-decoration: underline;
 }
