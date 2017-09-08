@@ -42,12 +42,14 @@
 
 /* General sidebar styles */
 .bm-menu {
+    width:100%;
   background: #373a47;
   /*padding: 2.5em 1.5em 0;*/
   font-size: 1.15em;
 }
 
 .bm-menu-wrap {
+width:100%;
   bottom: 0;
   left: 0;
 }
@@ -59,8 +61,9 @@
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
-  padding: 0.8em;
+    width:100%;
+    color: #b8b7ad;
+    padding: 0.8em;
 }
 
 /* Styling of overlay */
@@ -71,8 +74,8 @@
 }
 
 .verticalContainer {
-  color: white;
-  background: #ffbd17;
+  /*color: white;
+  background: #ffbd17;*/
   /*width: 400px;
   height: 260px;*/
 }
@@ -87,20 +90,61 @@
   transform: translateY(-25%);
 }
 
-/* Grow */
-.hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.3s;
-    transition-property: transform;
+/* Fade */
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: #EF9A9A;
+  color: white;
 }
 
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
-    transform: scale(1.1);
+.fa-linkedin {
+    color:black;
+    font-size: 4rem;
+    display:inline-block;
+}
+
+.fa-linkedin:hover{
+    color:#FFCA28;
+}
+
+
+.fa-github {
+    color:black;
+    font-size: 4rem;
+    display:inline-block;
+}
+
+.fa-github:hover{
+    color:#FFCA28;
+}
+
+.fa-stack-overflow {
+    color:black;
+    font-size: 4rem;
+    display:inline-block;
+}
+
+.fa-stack-overflow:hover{
+    color:#FFCA28;
+}
+
+.fa-quora {
+    color:black;
+    font-size: 4rem;
+    display:inline-block;
+}
+
+.fa-quora:hover{
+    color:#FFCA28;
 }

@@ -9,10 +9,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Projects from "./Projects";
 import BurgerMenu from "./BurgerMenu"
-
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin();
+import Skills from "./Skills"
 
 class App extends Component {
 	componentDidMount() {
@@ -23,7 +20,6 @@ class App extends Component {
 		return (
 			<div>
 				<BrowserRouter>
-					<MuiThemeProvider>
 					<div id="menu-outer-container">
 						<BurgerMenu />
 					  	<main id="menu-page-wrap">
@@ -31,9 +27,9 @@ class App extends Component {
 	  						<Route exact={true} path="/projects" component={Projects} />
 	  						<Route exact={true} path="/about" component={About} />
 	  						<Route exact={true} path="/contact" component={Contact} />
+							<Route exact={true} path="/skills" component={Skills} />
 					  	</main>
 					</div>
-				</MuiThemeProvider>
 				</BrowserRouter>
 			</div>
 		);

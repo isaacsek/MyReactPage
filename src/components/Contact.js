@@ -1,11 +1,24 @@
 import React, { Component } from "react";
 import {connect} from 'react-redux';
+import { Link } from "react-router-dom";
 
 class Contact extends Component {
 	render() {
 		return (
-			<div className="center-align">
-				<h3>Contact</h3>
+			<div style={{height:'100vh', textAlign:'center'}}>
+				<div className="verticalContent" style={{display:"inline-block", textAlign:'left'}}>
+					<h1>Contact</h1>
+					<div className="ml-2" style={{marginLeft:'30px'}}>
+						<div className="">
+                            <i className="material-icons" style={{fontSize:'32px', display:'inline', position:'relative', top:'5px', color:'black'}}>call</i>
+                            <p className="ml-2" style={{fontSize:'32px', display:'inline'}}>(360)213-8953</p>
+                        </div>
+						<div className="">
+                            <i className="material-icons" style={{fontSize:'32px', display:'inline', position:'relative', top:'5px', color:'black'}}>email</i>
+                            <p className="ml-2" style={{fontSize:'32px', display:'inline'}}>Isaacsek@uw.edu</p>
+                        </div>
+					</div>
+				</div>
 			</div>
 		);
 	}
