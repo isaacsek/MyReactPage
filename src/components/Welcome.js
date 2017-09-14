@@ -7,8 +7,8 @@ class Welcome extends Component {
 		return (
 			<div style={{height:'100vh', textAlign:'center', color:'white'}}>
 				<div className="verticalContent" style={{display:"inline-block"}}>
-					<h1>Isaac Sek</h1>
-					<h4>Software Development Engineer</h4>
+					<h1 style={{fontSize:'6rem'}}>Isaac Sek</h1>
+					<h4>Software Engineer</h4>
 				</div>
 			</div>
 		);
