@@ -7,7 +7,8 @@ class Skills extends Component {
 		return (
 			<div style={{height:'100vh', textAlign:'center'}}>
 				<div className="verticalContent" style={{display:"inline-block"}}>
-					<a href={process.env.PUBLIC_URL + "/images/IsaacSekResume.pdf"}><p className="ml-2" style={{fontSize:'16px', display:'inline', color:'#FDD835', textDecoration:'underline'}}><h1>Isaac Sek Resume</h1></p></a>
+					<a href={process.env.PUBLIC_URL + "/images/IsaacSekResume.pdf"}>
+					<p className="ml-2" style={{fontSize:'16px', display:'inline', color:'#FDD835', textDecoration:'underline'}}><h1>Isaac Sek Resume</h1></p></a>
 				</div>
 			</div>
 		);

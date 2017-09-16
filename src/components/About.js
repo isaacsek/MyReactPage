@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {connect} from 'react-redux';
+import { Link } from "react-router-dom";
 
 class About extends Component {
 	render() {
@@ -11,8 +12,9 @@ class About extends Component {
 						<div>A software engineer intern at <a href="https://www.eagleview.com/" style={{color:'#FDD835', textDecoration:'underline'}}>EagleView Technologies</a> seeking to obtain a professional position in the industry</div>
 						<div>utilizing my relevant experience, technical expertise, and problem solving skills. A personable, communicative</div>
 						<div>team player who specializes in object-oriented programming languages and front-end development. A 2018 Applied</div>
-						<div>Computing graduate of the University of Washington. <a href={process.env.PUBLIC_URL + "/images/IsaacSekResume.pdf"} style={{color:'#FDD835', textDecoration:'underline'}}>Hire me!</a></div>
+						<div>Computing graduate of the University of Washington. </div>
 					</div>
+					<div className="ml-2" style={{marginTop:"60px"}}><Link to="/contact" className="waves-effect wave-yellow btn-large ">Hire me!</Link></div>
 				</div>
 			</div>
 		);
